@@ -8,7 +8,7 @@ def search(searched,N):
 	for i in range(len(dir)):
 		next_pos = [searched[-1][0]+dir[i][0],searched[-1][1]+dir[i][1]]
 		if next_pos not in searched:
-			print searched+[next_pos]
+			print(searched+[next_pos])
 			cnt = cnt + search(searched+[next_pos],N)
 	
 	return cnt
