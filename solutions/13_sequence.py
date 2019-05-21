@@ -3,18 +3,31 @@ countries_list = ["Brazil","Croatia","Mexico","Cameroon","Spain","Netherlands","
 for i in range(len(countries_list)):
 	countries_list[i]=countries_list[i].lower()
 	
-def next_string(a):
+def next_country(a):
 	n = a[-1]
-	print(n)
-	
+	country_next = []
 	for l in countries_list:
 		if l[0]==n:
-			return l
+			country_next.append(l)
+	return country_next
+#
+#
+#def country_sequence(a):
+#	country_last = a[-1]
+#	country_next_list = next_country(country_last)
+#	for l in country_next_list:
+#		print(a+l)
 
+def next_one(sequence):
+	country_last = sequence[-1]
 
-def 
+	
+	
+	
+	#return country_sequence([a,n])
 	
 	
 
 if __name__ == "__main__":
-	print(next_string('netherlands'))
+	#print(next_country('netherlands'))
+#	print(country_sequence(['netherlands']))
