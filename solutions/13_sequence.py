@@ -16,6 +16,8 @@ def seq_count(sequence,cnt):
 
 	country_last = sequence[-1]
 	next_country =next_country_list(country_last)
+	if len(next_country)==0:
+		return 0
 	
 	for c in next_country:
 		if c not in sequence:
